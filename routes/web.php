@@ -26,6 +26,7 @@ Route::resource('/productos','ProductosController');
 Route::get('prueba2','ProductosController@prueba2');
 Route::get('eliminar2','ProductosController@borrarVista');
 Route::get('elim','ProductosController@borrarCont');
+Route::get('probarinclude/{id}','ProductosController@probarinclude');
 
 
 

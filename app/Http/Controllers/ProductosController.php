@@ -172,4 +172,16 @@ class ProductosController extends Controller
           return redirect("/productos");
         //
     }
+
+
+    public function probarinclude($id)
+    {
+
+        //$productos=$id;
+        $productos=Producto::all();
+
+        return view("productos.prueba3",compact("id","productos"));
+
+        
+    }
 }

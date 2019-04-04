@@ -3,7 +3,7 @@
 
 @section("cabecera")
 
-editar registro
+@include('layouts._include')
 
 @endsection
 
@@ -23,6 +23,7 @@ editar registro
 
 
             <script>
+              
 
 $(document).ready(function(){
   $("option").click(function(){
@@ -36,12 +37,26 @@ $(document).ready(function(){
             </script>
 
 
+@if (0==0)
+ 
+@include('layouts._include')
+
+
+@endif
+
+
+
+
+
 <form id="cambiar" method="post" action="#">
     {{csrf_field()}}
     <input type="hidden" name="_method" value="DELETE">
     <input type="submit" name="" value="ELiminar registro">
 
     </form>
+
+
+    <a href="{{ url('probarinclude/4') }}">prueba3</a>
 
 		
 
