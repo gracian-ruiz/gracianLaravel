@@ -8,7 +8,7 @@
 
         <div>
             @if(is_null($nombre))
-            no tengo a quin saludar
+            no tengo a quien saludar
             hola {{ $nombre }}
             @else
              hola {{ $nombre }}
@@ -17,6 +17,7 @@
 
 
         </div>
+        
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
